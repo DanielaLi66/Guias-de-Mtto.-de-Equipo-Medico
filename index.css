@@ -1,0 +1,464 @@
+:root {
+    --rosa: #e6757a; 
+    --gris-oxford: #3a3a3a;
+    --azul-: #504F61;
+    --fondo-rosado-suave: #ffd3d3;
+    --blanco: #e6e7e8;
+    --fucsia: #7e0642;
+    --rojo: rgb(179, 43, 43);  
+    --amarillo:rgb(245, 245, 89);  
+}
+body{
+    font-family: 'Georgia', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+    
+}
+h2{
+    text-align: center;
+
+}
+p{
+    text-align: justify;
+}
+.tabla-codigo {
+    width: 100%; /* Tamaño para la tabla */
+    margin-left: 0; /* Alinea la tabla a la izquierda */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--fondo-rosado-suave);
+
+}
+
+.tabla-codigo table {
+    width: 40%; /* Para que la tabla ocupe todo el ancho del div */
+    border-collapse: collapse; /* Quita los espacios entre bordes */
+   
+}
+
+.tabla-codigo td {
+    border: 1px solid var(--gris-oxford); /* Color del borde */
+    padding: 0px; /* Espaciado interno */
+    font-size: 11px; /* Texto de tamaño pequeño */
+    text-align: left; /* Alineación a la izquierda */
+    background-color: var(--fondo-rosado-suave); /* Fondo blanco para las celdas */
+}
+.tabla-codigo tr:nth-child(even) {
+    background-color: var(--fondo-rosado-suave); /* Color de fondo para filas pares */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color:var(--rosa);
+    padding: 20px;
+    color: var(--gris-oxford);
+    font-size: 0.8rem;
+
+}
+
+.logo {
+    flex: 0 0 auto; /* Mantiene el logo en su tamaño original */
+    margin-left: auto; /* Alinea el logo a la derecha */
+}
+
+.logo img {
+    height: auto;
+    width: 600px; /* Corrige el valor */
+}
+
+.Titulo {
+    flex: 1; /* Toma el espacio restante */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    min-width: 500px; /* Asegura que el título tenga un ancho mínimo */
+    display: flex; /* Asegura que el contenido esté en línea con el logo */
+    align-items: center; /* Alinea el título verticalmente */
+}
+
+.contacto{
+    background-color: #333333;
+    display: flex;
+    color: #e6e7e8;
+    padding: 2px;
+    
+}
+.contacto p{
+    padding: 0px;
+    margin: 0px;  
+
+}
+
+a{
+    text-decoration: none;
+}
+#indice{
+    background-color: var(--azul-);
+    border: 6px double beige;
+    color: var(--blanco);
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+
+
+}
+#indice a {
+    text-decoration: none;
+    color: var(--blanco); /* Cambia el color según tus preferencias */
+}
+
+/* También puedes aplicar otros estilos como el color y el tamaño de fuente */
+#indice a:hover {
+    color:var(--fucsia); /* Cambia el color al pasar el cursor por encima */
+}
+h4 {
+    font-weight: normal;
+    margin: 1;
+
+}
+
+
+#descripcion {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+#descripcion a{
+    text-decoration: none;
+    color: var(--blanco);
+    
+
+}
+
+
+#ubicacion{
+    background-color: var(--azul-);
+    color: var(--blanco);
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#img-equipo{
+    background-color: var(--gris-oxford);
+    color: var(--blanco);
+    border: 7px double beige; 
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+ }
+#precauciones{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: 6px double beige;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+   
+ }
+ 
+ 
+ #verificacion{
+    background-color: var(--azul-);
+    color: var(--blanco);
+    border: 6px double beige;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+ }
+ #evaluacionPrevia{
+    background-color: var(--fondo-rosado-suave);
+    color: var(--gris-oxford);
+    border: 6px double var(--gris-oxford);
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    
+ }
+ 
+ #procedimiento{
+    background-color: var(--rosa);
+    color: var(--blanco);
+    border: 6px double var(--gris-oxford);
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+   
+
+}
+#evaluacionPosterior{
+    background-color: var(--azul-);
+    color: var(--blanco);
+    border: 6px ;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+   
+    
+ }
+ #etiqueta-OS-RegistroMP{
+    margin: 20px;
+    border: 2px double var(--gris-oxford); /* Borde simple */
+    padding: 15px;
+    border-radius: 30px;
+    background-color:var(--gris-oxford);
+    color: var(--blanco);
+    
+
+ }
+ #referencias
+ {background-color: var(--azul-);
+    color: var(--blanco);
+    border: 6px ;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+ }
+ #referencias a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: var(--blanco); /* Cambia el color si lo deseas */
+}
+
+/* Cambia el color del enlace al pasar el cursor */
+#referencias a:hover {
+    color: var(--fucsia);
+}
+/*Estilos de Cuadro de Texto y Tablas*/
+/*Tabla formato nx2*/
+ .tabla {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    background-color: beige;
+    text-align: justify;
+    color: var(--gris-oxford);
+    margin: 10px;
+}
+.tabla th, .tabla td {
+    border: 1px solid black; /* Bordes para las celdas */
+    text-align: left; /* Alineación del texto en las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+    background-color: beige;
+}
+caption {
+    caption-side: bottom; /* Muestra el pie de tabla en la parte inferior */
+    font-size: 14px;
+    color: var(--gris-oxford);
+    margin-top: 5px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color: beige;
+    color: var(--gris-oxford);
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+    color: var(--gris-oxford);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.table-container caption {
+    font-weight: bold;
+    
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    background-color: beige;
+}
+
+thead th {
+    background-color: #f1f1f1;
+}
+
+ .cuadro-amarillo{
+    border: 2px double var(); /* Borde simple */
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--amarillo);
+    color: var(--gris-oxford);
+    text-align: justify;
+ }
+
+ .cuadro-beige{
+    border: 2px double var(--gris-oxford); 
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: beige;
+    color: var(--gris-oxford);
+    text-align: justify;
+ }
+ .cuadro-gris
+ {
+    border: 2px ;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--gris-oxford);
+    color: var(--blanco);
+    margin: 10px;
+ }
+
+ .cuadro-azul{
+    border: 2px double var(--azul-); 
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--azul-);
+    color: var(--blanco);
+    margin: 10px;
+    text-align: justify;
+ }
+ .cuadro-rosa{
+    border: 3px double var(--gris-oxford); 
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--rosa);
+    color: var(--blanco);
+    margin: 10px;
+
+ }
+ .cuadro-rosado{
+    border: 3px double var(--gris-oxford); 
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--fondo-rosado-suave);
+    color: var(--gris-oxford);
+    margin: 10px;
+
+
+ }
+
+
+/*Tamaños de imagen*/
+figure {
+    text-align: center; /* Centra la figura */
+    margin: 20px auto; /* Espaciado alrededor de la figura */
+    width: 70%; /* Ajusta el ancho según sea necesario */
+}
+figcaption {
+    font-size: 14px; /* Tamaño de la fuente del pie de foto */
+    color: var(--blanco); /* Color de texto */
+    margin-top: 5px; /* Espacio entre la imagen y el pie de foto */
+}
+.img-med{
+    max-width: 70%;
+    height: auto;
+    border-radius: 7px;
+ }
+ /* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.img-ch{
+    max-width: 15%;
+    height: auto;
+    margin-top: .25cm;
+    border-radius: 0px;
+    
+
+}
+.img-tabla{
+    max-width: 80%;
+    height: auto;
+    border-radius: 7px;
+}
+#inicio {
+    display: inline-block;
+    background-color: var(--fucsia);
+    color: beige;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#inicio a {
+    color: white;
+    text-decoration: none;
+}
+
+#inicio :hover {
+    background-color: var(--gris-oxford);
+}
+
+
+ /*Pie de página*/
+ footer {
+    text-align: center;
+    background-color: var(--gris-oxford);
+    color: var(--blanco);
+    padding: 10px;
+}
+
+/* Adaptación a la pantalla de escritorio
+Cuando una pantalla sea más ancha que 8.2 cm entonces entra en el modo escritorio
+*/
+@media (min-width: 8cm) {
+    img {
+        width: 75%;
+    }
+
+    header {
+        flex-direction: row; /* Mantiene la dirección en fila */
+        padding: 15px;
+    }
+
+    header title {
+        margin: 0 auto; /* Centra el título cuando la pantalla es pequeña */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .contacto{
+        
+        color: var(--blanco);
+        background-color: #3a3a3a;
+        padding: 10px;
+        
+    }
+}
