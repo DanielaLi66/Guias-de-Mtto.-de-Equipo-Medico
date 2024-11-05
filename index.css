@@ -60,22 +60,23 @@ header {
 }
 
 .logo {
-    flex: 0 0 auto; /* Mantiene el logo en su tamaño original */
-    margin-left: auto; /* Alinea el logo a la derecha */
+    flex: 0 1 15%; /* Ocupa el 25% del ancho */
+    max-width: 15%; /* Asegura que no exceda el 25% */
+    text-align: left; /* Alinea el logo a la izquierda */
 }
 
 .logo img {
-    height: auto;
-    width: 600px; /* Corrige el valor */
+    width: 100%; /* Se adapta al contenedor */
+    height: auto; /* Mantiene proporción */
 }
 
+
 .Titulo {
-    flex: 1; /* Toma el espacio restante */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    min-width: 500px; /* Asegura que el título tenga un ancho mínimo */
-    display: flex; /* Asegura que el contenido esté en línea con el logo */
-    align-items: center; /* Alinea el título verticalmente */
+    flex: 1 1; /* Ocupa el restante del espacio */
+    text-align: center;
+    
 }
+
 
 .contacto{
     background-color: #333333;
@@ -460,5 +461,15 @@ Cuando una pantalla sea más ancha que 8.2 cm entonces entra en el modo escritor
         background-color: #3a3a3a;
         padding: 10px;
         
+    }
+    header {
+        flex-direction: row;
+        text-align: center;
+        gap: 0; /* Sin espacio adicional en pantallas pequeñas */
+    }
+
+    .logo, .titulo {
+        flex: 0 0 auto;
+        max-width: 100%;
     }
 }
